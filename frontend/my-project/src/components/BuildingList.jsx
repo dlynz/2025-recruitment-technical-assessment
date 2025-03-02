@@ -4,7 +4,7 @@ const buildings = [
   {
     name: "AGSM",
     rooms_available: 9,
-    building_picture: "/assets/ainsworth.webp",
+    building_picture: "/assets/agsm.webp",
   },
   {
     name: "Ainsworth Building",
@@ -60,7 +60,7 @@ const BuildingList = ({ searchQuery }) => {
   );
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-[20px] p-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-[20px] p-4">
       {filteredBuildings.length > 0 ? (filteredBuildings.map((building) => (
         <div style={{
               backgroundImage: `url(${building.building_picture})`,
