@@ -1,9 +1,16 @@
 import { DarkMode, Map } from "@mui/icons-material";
 import WindowIcon from '@mui/icons-material/Window';
 import logo from "/assets/freeRoomsLogo.png";
+import logoClosed from "/assets/freeroomsDoorClosed.png"
 import SearchIcon from '@mui/icons-material/Search';
+import { useState } from "react";
 
 function Header({ darkMode, setDarkMode }) {
+  const [isLogoOpen, setIsLogoOpen] = useState(true);
+
+  const toggleLogo = () => {
+    setIsLogoOpen(!isLogoOpen);
+  }
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -12,9 +19,9 @@ function Header({ darkMode, setDarkMode }) {
   return (
     <>
       <div className="flex justify-between pl-2 items-center w-full h-[68px] border dark:border-gray-700 bg-white dark:bg-gray-800 border-b-gray-300 dark:border-b-gray-700 duration-300">
-        <div className="flex justify-center items-center cursor-pointer">
-          <img src={logo} className="w-12" alt="Logo"/>
-          <div className="flex justify-center items-center text-freerooms-orange font-bold text-3xl">
+        <div onClick={toggleLogo} className="flex justify-center items-center cursor-pointer hover:opacity-70 duration-300">
+          <img src={isLogoOpen ? logo : logoClosed} className="w-12" alt="Logo"/>
+          <div className="flex justify-center select-none items-center text-freerooms-orange font-bold text-3xl">
             Freerooms
           </div>
         </div>
