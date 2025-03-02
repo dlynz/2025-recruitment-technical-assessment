@@ -1,12 +1,6 @@
-# React + Vite
+# DevSoc Frontend Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I have done stretch tasks 1 and 2 in my project, there are a few personal design choices that made it a bit easier to code but also personally makes sense such as moving the search bar to the left and having the filter/sort buttons together on the right. This made it easier to code for responsiveness whilst also making the buttons to be more cohesive.
 
-Currently, two official plugins are available:
+Otherwise I've also made the searchbar work so you can search by the names of buildings and dark mode also works. The dark mode toggle also preserves through refreshes and page visits by storing the value in localstorage.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

@@ -28,7 +28,6 @@ function Header({ darkMode, setDarkMode }) {
           <button className="flex w-10 h-10 p-2 border-orange-300 hover:bg-[#FFF9F5] hover:border-freerooms-orange duration-200 border rounded-[4px] dark:border-freerooms-orange dark:hover:bg-gray-900 dark:hover:border-orange-600">
             <Map className="text-freerooms-orange" />
           </button>
-          {/* Dark Mode Toggle Button */}
           <button 
             onClick={toggleDarkMode} 
             className="flex w-10 h-10 p-2 border-orange-300 hover:bg-[#FFF9F5] hover:border-freerooms-orange duration-200 border rounded-[4px] dark:border-freerooms-orange dark:hover:bg-orange-800 dark:hover:border-freerooms-orange dark:bg-freerooms-orange"

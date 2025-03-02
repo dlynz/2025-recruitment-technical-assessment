@@ -67,7 +67,7 @@ const BuildingList = ({ searchQuery }) => {
               backgroundSize: "cover",
               backgroundPosition: "center", 
               backgroundRepeat: "no-repeat"
-            }} className="p-2 sm:aspect-square aspect-video bg-gray-300 rounded-lg flex flex-col justify-between items-center">
+            }} className="p-2 cursor-pointer hover:brightness-75 hover:scale-[102%] duration-300 md:aspect-square sm:aspect-video bg-gray-300 rounded-lg flex flex-row-reverse sm:flex-col sm:justify-between items-center min-h-[120px]">
           <div className="w-full flex justify-end items-center">
             <div className="bg-white dark:bg-gray-900 duration-300 rounded-xl h-[40px] w-[154px] flex justify-center items-center">
               {building.rooms_available > 5 ? 
@@ -80,7 +80,7 @@ const BuildingList = ({ searchQuery }) => {
               <p className="text-black dark:text-white font-semibold text-[12px]">{building.rooms_available} rooms available</p>
             </div>
           </div>
-          <div className="bg-freerooms-orange flex p-4 justify-start items-center w-full h-[58px] rounded-lg text-white">
+          <div className="sm:bg-freerooms-orange bg-gray-700 bg-opacity-60 flex p-4 justify-start items-center w-full h-[58px] rounded-lg text-white">
             <h2 className="text-sm font-semibold">{building.name}</h2>
           </div>
         </div>
