@@ -4,3 +4,10 @@ I have done stretch tasks 1 and 2 in my project, there are a few personal design
 
 Otherwise I've also made the searchbar work so you can search by the names of buildings and dark mode also works. The dark mode toggle also preserves through refreshes and page visits by storing the value in localstorage.
 
+To run the project cd into this directory and run
+
+```
+npm i
+
+npm run dev
+```
